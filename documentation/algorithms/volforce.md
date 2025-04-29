@@ -76,6 +76,7 @@ VF5 is volforce as it was implemented in SOUND VOLTEX 5. It was introduced in 20
 		| "FAILED"
 		| "CLEAR"
 		| "EXCESSIVE CLEAR"
+		| "MAXXIVE CLEAR"
 		| "ULTIMATE CHAIN"
 		| "PERFECT ULTIMATE CHAIN";
 	```
