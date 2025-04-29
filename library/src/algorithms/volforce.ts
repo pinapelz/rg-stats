@@ -7,6 +7,7 @@ export type SDVXLamps =
 	| "FAILED"
 	| "CLEAR"
 	| "EXCESSIVE CLEAR"
+	| "MAXXIVE CLEAR"
 	| "ULTIMATE CHAIN"
 	| "PERFECT ULTIMATE CHAIN";
 
@@ -41,6 +42,7 @@ const VF5GradeCoefficients: Record<SDVXGrades, number> = {
 const VF5LampCoefficients: Record<SDVXLamps, number> = {
 	"PERFECT ULTIMATE CHAIN": 110,
 	"ULTIMATE CHAIN": 105,
+	"MAXXIVE CLEAR": 104,
 	"EXCESSIVE CLEAR": 102,
 	CLEAR: 100,
 	FAILED: 50,

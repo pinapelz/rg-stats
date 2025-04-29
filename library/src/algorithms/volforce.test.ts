@@ -798,6 +798,7 @@ t.test("VF6 Tests", (t) => {
 		// differentiates Volforce values here -- unlike in VF5 where these would be
 		// marked as the same.
 		VF6TestCase(19, 9_500_000, "EXCESSIVE CLEAR", 0.357),
+		VF6TestCase(18, 9_923_042, "MAXXIVE CLEAR", 0.390),
 		VF6TestCase(19, 9_500_000, "CLEAR", 0.35),
 		VF6TestCase(19, 9_500_000, "FAILED", 0.175),
 
@@ -834,6 +835,7 @@ t.test("InverseVF6 Tests", (t) => {
 
 	const testCases = [
 		InvVF6TestCase(20, 0.413, "CLEAR", 9_900_000),
+		InvVF6TestCase(20, 0.232, "MAXXIVE CLEAR", 6_971_154),
 		InvVF6TestCase(20, 0.421, "EXCESSIVE CLEAR", 9_900_000),
 		InvVF6TestCase(13, 0.121, "CLEAR", 5_817_308),
 		InvVF6TestCase(13, 0.121, "FAILED", 9_595_559),
