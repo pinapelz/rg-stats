@@ -1,0 +1,30 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LogToBase = LogToBase;
+exports.RoundToNDP = RoundToNDP;
+/**
+ * Logarithm a number to any base.
+ * @param number - The number to logarithm.
+ * @param base - The base to log to.
+ *
+ * Uses this identity:
+ * loga(n) = logb(n) / logb(a)
+ * we use logb = ln, just because it's right there.
+ */
+function LogToBase(number, base) {
+    return Math.log(number) / Math.log(base);
+}
+/**
+ * Round a number to N decimal places.
+ *
+ * @example `RoundToNDP(1.594, 1) -> 1.6`
+ * @example `RoundToNDP(1.591, 2) -> 1.69`
+ *
+ * @param number - The number to round.
+ * @param dp - The amount of decimal places to round to.
+ */
+function RoundToNDP(number, dp) {
+    const mul = 10 ** dp;
+    return Math.round(number * mul) / mul;
+}
+//# sourceMappingURL=math.js.map
